@@ -21,7 +21,8 @@ services:
     restart: always
 
   mysql:
-    image: mysql:5.7
+    image: mysql:latest
+    platform: linux/x86_64
     volumes:
       - db-data:/var/lib/mysql
     environment:
